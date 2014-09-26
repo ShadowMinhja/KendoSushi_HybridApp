@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x86">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x64">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x86">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-ARM">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x86">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-ARM">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>8a5ef640-5443-487e-a07b-6f8aca389f71</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="common\transitions.less" />
+    <Content Include="css\android\actionsheet.less" />
+    <Content Include="css\android\all.less" />
+    <Content Include="css\android\base.less" />
+    <Content Include="css\android\button.less" />
+    <Content Include="css\android\buttongroup.less" />
+    <Content Include="css\android\drawer.less" />
+    <Content Include="css\android\forms.less" />
+    <Content Include="css\android\light.less" />
+    <Content Include="css\android\listview.less" />
+    <Content Include="css\android\modalview.less" />
+    <Content Include="css\android\navbar.less" />
+    <Content Include="css\android\popover.less" />
+    <Content Include="css\android\scroller.less" />
+    <Content Include="css\android\scrollview.less" />
+    <Content Include="css\android\splitview.less" />
+    <Content Include="css\android\switch.less" />
+    <Content Include="css\android\tabstrip.less" />
+    <Content Include="css\android\template.less" />
+    <Content Include="css\android\toolbar.less" />
+    <Content Include="css\common\actionsheet.less" />
+    <Content Include="css\common\after.less" />
+    <Content Include="css\common\all.less" />
+    <Content Include="css\common\base.less" />
+    <Content Include="css\common\button.less" />
+    <Content Include="css\common\buttongroup.less" />
+    <Content Include="css\common\drawer.less" />
+    <Content Include="css\common\forms.less" />
+    <Content Include="css\common\icons.less" />
+    <Content Include="css\common\listview.less" />
+    <Content Include="css\common\mixins.less" />
+    <Content Include="css\common\modalview.less" />
+    <Content Include="css\common\navbar.less" />
+    <Content Include="css\common\popover.less" />
+    <Content Include="css\common\scroller.less" />
+    <Content Include="css\common\scrollview.less" />
+    <Content Include="css\common\splitview.less" />
+    <Content Include="css\common\switch.less" />
+    <Content Include="css\common\tabstrip.less" />
+    <Content Include="css\common\toolbar.less" />
+    <Content Include="css\common\workarounds.less" />
+    <Content Include="css\Default\editor.png" />
+    <Content Include="css\Default\imagebrowser.png" />
+    <Content Include="css\Default\indeterminate.gif" />
+    <Content Include="css\Default\loading-image.gif" />
+    <Content Include="css\Default\loading.gif" />
+    <Content Include="css\Default\loading_2x.gif" />
+    <Content Include="css\Default\markers.png" />
+    <Content Include="css\Default\markers_2x.png" />
+    <Content Include="css\Default\slider-h.gif" />
+    <Content Include="css\Default\slider-v.gif" />
+    <Content Include="css\Default\sprite.png" />
+    <Content Include="css\Default\sprite_2x.png" />
+    <Content Include="css\flat\actionsheet.less" />
+    <Content Include="css\flat\all.less" />
+    <Content Include="css\flat\base.less" />
+    <Content Include="css\flat\button.less" />
+    <Content Include="css\flat\buttongroup.less" />
+    <Content Include="css\flat\drawer.less" />
+    <Content Include="css\flat\forms.less" />
+    <Content Include="css\flat\listview.less" />
+    <Content Include="css\flat\modalview.less" />
+    <Content Include="css\flat\navbar.less" />
+    <Content Include="css\flat\popover.less" />
+    <Content Include="css\flat\scroller.less" />
+    <Content Include="css\flat\scrollview.less" />
+    <Content Include="css\flat\splitview.less" />
+    <Content Include="css\flat\switch.less" />
+    <Content Include="css\flat\tabstrip.less" />
+    <Content Include="css\flat\template.less" />
+    <Content Include="css\flat\toolbar.less" />
+    <Content Include="css\images\android-sprite.png" />
+    <Content Include="css\images\back.png" />
+    <Content Include="css\images\iconmasks.svg" />
+    <Content Include="css\images\ios-sprite.png" />
+    <Content Include="css\images\kendoui.svg" />
+    <Content Include="css\images\kendoui.ttf" />
+    <Content Include="css\images\kendoui.woff" />
+    <Content Include="css\images\wp8_icons.png" />
+    <Content Include="css\images\wp8_inverseicons.png" />
+    <Content Include="css\ios7\actionsheet.less" />
+    <Content Include="css\ios7\all.less" />
+    <Content Include="css\ios7\base.less" />
+    <Content Include="css\ios7\button.less" />
+    <Content Include="css\ios7\buttongroup.less" />
+    <Content Include="css\ios7\drawer.less" />
+    <Content Include="css\ios7\forms.less" />
+    <Content Include="css\ios7\listview.less" />
+    <Content Include="css\ios7\modalview.less" />
+    <Content Include="css\ios7\navbar.less" />
+    <Content Include="css\ios7\popover.less" />
+    <Content Include="css\ios7\scroller.less" />
+    <Content Include="css\ios7\scrollview.less" />
+    <Content Include="css\ios7\splitview.less" />
+    <Content Include="css\ios7\switch.less" />
+    <Content Include="css\ios7\tabstrip.less" />
+    <Content Include="css\ios7\template.less" />
+    <Content Include="css\ios7\toolbar.less" />
+    <Content Include="css\ios\actionsheet.less" />
+    <Content Include="css\ios\all.less" />
+    <Content Include="css\ios\base.less" />
+    <Content Include="css\ios\button.less" />
+    <Content Include="css\ios\buttongroup.less" />
+    <Content Include="css\ios\drawer.less" />
+    <Content Include="css\ios\forms.less" />
+    <Content Include="css\ios\listview.less" />
+    <Content Include="css\ios\modalview.less" />
+    <Content Include="css\ios\navbar.less" />
+    <Content Include="css\ios\popover.less" />
+    <Content Include="css\ios\scroller.less" />
+    <Content Include="css\ios\scrollview.less" />
+    <Content Include="css\ios\splitview.less" />
+    <Content Include="css\ios\switch.less" />
+    <Content Include="css\ios\tabstrip.less" />
+    <Content Include="css\ios\template.less" />
+    <Content Include="css\ios\toolbar.less" />
+    <Content Include="css\kendo.mobile.all.less" />
+    <Content Include="css\kendo.mobile.android.dark.less" />
+    <Content Include="css\kendo.mobile.android.light.less" />
+    <Content Include="css\kendo.mobile.blackberry.less" />
+    <Content Include="css\kendo.mobile.common.less" />
+    <Content Include="css\kendo.mobile.flat.less" />
+    <Content Include="css\kendo.mobile.ios.less" />
+    <Content Include="css\kendo.mobile.meego.less" />
+    <Content Include="css\kendo.mobile.wp8.less" />
+    <Content Include="css\meego.less" />
+    <Content Include="css\style.css" />
+    <Content Include="css\wp8\actionsheet.less" />
+    <Content Include="css\wp8\all.less" />
+    <Content Include="css\wp8\base.less" />
+    <Content Include="css\wp8\button.less" />
+    <Content Include="css\wp8\buttongroup.less" />
+    <Content Include="css\wp8\drawer.less" />
+    <Content Include="css\wp8\forms.less" />
+    <Content Include="css\wp8\listview.less" />
+    <Content Include="css\wp8\modalview.less" />
+    <Content Include="css\wp8\navbar.less" />
+    <Content Include="css\wp8\popover.less" />
+    <Content Include="css\wp8\scroller.less" />
+    <Content Include="css\wp8\scrollview.less" />
+    <Content Include="css\wp8\splitview.less" />
+    <Content Include="css\wp8\switch.less" />
+    <Content Include="css\wp8\tabstrip.less" />
+    <Content Include="css\wp8\template.less" />
+    <Content Include="css\wp8\toolbar.less" />
+    <Content Include="images\200\california-rolls.jpg" />
+    <Content Include="images\200\chicken-teriyaki.jpg" />
+    <Content Include="images\200\chirashi-sushi.jpg" />
+    <Content Include="images\200\ebi-rolls.jpg" />
+    <Content Include="images\200\edamame.jpg" />
+    <Content Include="images\200\gohan.jpg" />
+    <Content Include="images\200\hosomaki-mix.jpg" />
+    <Content Include="images\200\maguro.jpg" />
+    <Content Include="images\200\miso-soup.jpg" />
+    <Content Include="images\200\salmon-teriyaki.jpg" />
+    <Content Include="images\200\sashimi-salad.jpg" />
+    <Content Include="images\200\seattle-rolls.jpg" />
+    <Content Include="images\200\seaweed-salad.jpg" />
+    <Content Include="images\200\shake.jpg" />
+    <Content Include="images\200\shiromi.jpg" />
+    <Content Include="images\200\spicytuna-rolls.jpg" />
+    <Content Include="images\200\tekka-maki.jpg" />
+    <Content Include="images\200\tori-katsu.jpg" />
+    <Content Include="images\200\yaki-udon.jpg" />
+    <Content Include="images\75\california-rolls.jpg" />
+    <Content Include="images\75\chicken-teriyaki.jpg" />
+    <Content Include="images\75\chirashi-sushi.jpg" />
+    <Content Include="images\75\ebi-rolls.jpg" />
+    <Content Include="images\75\edamame.jpg" />
+    <Content Include="images\75\gohan.jpg" />
+    <Content Include="images\75\hosomaki-mix.jpg" />
+    <Content Include="images\75\maguro.jpg" />
+    <Content Include="images\75\miso-soup.jpg" />
+    <Content Include="images\75\salmon-teriyaki.jpg" />
+    <Content Include="images\75\sashimi-salad.jpg" />
+    <Content Include="images\75\seattle-rolls.jpg" />
+    <Content Include="images\75\seaweed-salad.jpg" />
+    <Content Include="images\75\shake.jpg" />
+    <Content Include="images\75\shiromi.jpg" />
+    <Content Include="images\75\spicytuna-rolls.jpg" />
+    <Content Include="images\75\tekka-maki.jpg" />
+    <Content Include="images\75\tori-katsu.jpg" />
+    <Content Include="images\75\yaki-udon.jpg" />
+    <Content Include="images\happy.png" />
+    <Content Include="images\sad.png" />
+    <Content Include="images\tabstrip.png" />
+    <Content Include="merges\android\scripts\android2.3-jscompat.js" />
+    <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="merges\ios\" />
+    <Content Include="merges\windows8\scripts\platformOverrides.js" />
+    <Content Include="merges\windows8\scripts\winstore-jscompat.js" />
+    <Folder Include="merges\wp8\" />
+    <Folder Include="res\icons\android\" />
+    <Folder Include="res\icons\ios\" />
+    <Folder Include="res\icons\wp8\" />
+    <Folder Include="res\icons\windows8\" />
+    <Folder Include="res\screens\android\" />
+    <Folder Include="res\screens\ios\" />
+    <Folder Include="res\screens\windows8\" />
+    <Folder Include="res\screens\wp8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="scripts\index.js" />
+    <Content Include="scripts\jquery.min.js" />
+    <Content Include="scripts\kendo.custom.min.js" />
+    <Content Include="scripts\less.min.js" />
+    <Content Include="scripts\menu.js" />
+    <Content Include="scripts\platformOverrides.js" />
+    <Content Include="css\index.css" />
+    <Content Include="res\cert\android\ant.properties" />
+    <Content Include="res\icons\android\icon-36-ldpi.png" />
+    <Content Include="res\icons\android\icon-48-mdpi.png" />
+    <Content Include="res\icons\android\icon-72-hdpi.png" />
+    <Content Include="res\icons\android\icon-96-xhdpi.png" />
+    <Content Include="res\icons\ios\icon-40.png" />
+    <Content Include="res\icons\ios\icon-40-2x.png" />
+    <Content Include="res\icons\ios\icon-50.png" />
+    <Content Include="res\icons\ios\icon-50-2x.png" />
+    <Content Include="res\icons\ios\icon-57.png" />
+    <Content Include="res\icons\ios\icon-57-2x.png" />
+    <Content Include="res\icons\ios\icon-60.png" />
+    <Content Include="res\icons\ios\icon-60-2x.png" />
+    <Content Include="res\icons\ios\icon-72.png" />
+    <Content Include="res\icons\ios\icon-72-2x.png" />
+    <Content Include="res\icons\ios\icon-76.png" />
+    <Content Include="res\icons\ios\icon-76-2x.png" />
+    <Content Include="res\icons\ios\icon-small.png" />
+    <Content Include="res\icons\ios\icon-small-2x.png" />
+    <Content Include="res\icons\windows8\logo.png" />
+    <Content Include="res\icons\windows8\smalllogo.png" />
+    <Content Include="res\icons\windows8\storelogo.png" />
+    <Content Include="res\icons\wp8\icon-62-tile.png" />
+    <Content Include="res\icons\wp8\icon-173-tile.png" />
+    <Content Include="res\screens\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screens\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screens\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-568h-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screens\windows8\splashscreen.png" />
+    <Content Include="res\screens\wp8\screen-portrait.jpg" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Multi-Device Hybrid App</ProjectUISubcaption>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Multi-Device Hybrid Apps could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Multi-Device Hybrid Apps has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+</Project>
